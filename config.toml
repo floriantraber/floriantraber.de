@@ -1,6 +1,6 @@
 baseurl = "/"  # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-title = "Academic"
-copyright = "&copy; 2017 Your Name"
+title = "Florian Traber"
+copyright = "&copy; 2017 Florian Traber"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -48,7 +48,7 @@ defaultContentLanguageInSubdir = false
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "test@example.org"
+  email = "florian@floriantraber.de"
   address = "Building 1 Room 1, Stanford University, California, 90210, USA"
   office_hours = "Monday 10:00 to 13:00 or email for appointment"
   phone = "888 888 88 88"
