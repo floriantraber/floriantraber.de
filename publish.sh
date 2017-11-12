@@ -1,5 +1,10 @@
 #!/bin/sh
-
+BRANCH=$1
+if [[ ! $BRANCH ]]
+then
+    echo "Parameter branch ist required."
+    exit 1;
+fi
 if [[ $(git status -s) ]]
 then
     echo "The working directory is dirty. Please commit any pending changes."
@@ -12,8 +17,8 @@ git worktree prune
 rm -rf .git/worktrees/public/
 mkdir public
 
-echo "Checking out site branch into public"
-git worktree add -B site public origin/site
+echo "Checking out $BRANCH branch into public"
+git worktree add -B $BRANCH public origin/$BRANCH
 
 echo "Removing existing files"
 rm -rf public/*
@@ -23,3 +28,5 @@ hugo
 
 echo "Updating master branch"
 cd public && git add --all && git commit -m "Publish to site (publish.sh)" && git push
+
+# TODO adding a tag for a release would be nice
