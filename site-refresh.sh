@@ -9,7 +9,7 @@ echo "using branch $BRANCH"
 WORKDIR='floriantraber.de'
 if [[ $BRANCH != 'site' ]]
 then
-    WORKDIR = $BRANCH + $WORKDIR
+  WORKDIR=$BRANCH.$WORKDIR
 fi
 echo "using workdir $WORKDIR"
 mkdir /var/app/$WORKDIR
