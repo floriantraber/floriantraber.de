@@ -1,0 +1,40 @@
+{{ $ := .root }}
+{{ $page := .page }}
+{{ $pubs_len := len (where $.Site.RegularPages "Type" "work_experience") }}
+<!-- work_experience widget -->
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
+    {{ if gt $pubs_len $page.Params.count }}
+    <p class="view-all">
+      <a href="{{ "/work_experience/" | relLangURL }}">
+      More
+      <i class="fa fa-angle-double-right"></i>
+      </a>
+    </p>
+    {{ end }}
+  </div>
+  <div class="col-xs-12 col-md-8">
+    {{ with $page.Content }}<p>{{ . | markdownify }}</p>{{ end }}
+    {{ $.Scratch.Set "recent_work_experience" (where $.Site.RegularPages "Type" "work_experience") }}
+    {{ $recent_work_experience := $.Scratch.Get "recent_work_experience" }}
+    {{ range first $page.Params.count $recent_work_experience }}
+    <div class="pub-list-item" style="margin-bottom: 1rem" itemscope>
+      <img src="{{ .Params.url_logo}}" style="max-width: 100px">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <small>{{ .Params.Company }}</small>
+      <p>
+        {{ .Params.from_year }} -
+        {{ .Params.to_year }}
+      </p>
+      <p>{{ .Params.short_description}}</p>
+      <span class="badge badge-primary">
+        {{ i18n "btn_slides" }}
+      </span>
+      <p>{{ partial "publication_links" (dict "content" . "is_list" 1) }}</p>
+    </div>
+    {{ end }}
+
+
+  </div>
+</div>
