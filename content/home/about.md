@@ -8,21 +8,21 @@ date = "2016-04-20T00:00:00"
 weight = 5
 
 # List your academic interests.
-[interests]
-  interests = [
-    "Lorem Intelligence",
-    "Computational ipsum",
-    "Information dolor"
-  ]
+#[interests]
+#  interests = [
+#    "Lorem Intelligence",
+#    "Computational ipsum",
+#    "Information dolor"
+#  ]
 
 # List your qualifications (such as academic degrees).
 
 [[education.courses]]
   course = "BSc in IT- and Software-systems"
-  institution = "Dortmund University of Applied Sciences and Arts"
+  institution = "Dortmund University of Applied Sciences and Arts, 1.8"
   year = 2017
 +++
 
 # Biography
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+Here comes the introductory
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.

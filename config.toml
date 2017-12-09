@@ -40,7 +40,7 @@ defaultContentLanguageInSubdir = false
 
   # Your details.
   name = "Florian Traber"
-  role = "Software Engineer"
+  role = "Software Developer"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
@@ -89,7 +89,7 @@ defaultContentLanguageInSubdir = false
 
   # Date and time format (refer to Go's date format: http://fuckinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-  date_format = "Jan 2, 2006"
+  date_format = "02.01.2006"
   #   Examples: "3:04 pm" or "15:04"
   time_format = "15:04"
 
@@ -222,6 +222,11 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "//linkedin.com/in/florian-traber-27649274/"
 
+  [[params.social]]
+    icon = "download"
+    icon_pack = "fa"
+    link = "/files/florian_traber.pdf"
+
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
@@ -233,10 +238,10 @@ defaultContentLanguageInSubdir = false
   url = "#about"
   weight = 1
 
-#[[menu.main]]
-#  name = "Work Experience"
-#  url = "#work_experience"
- # weight = 2
+[[menu.main]]
+  name = "Work Experience"
+  url = "#work_experience"
+  weight = 2
 
 #[[menu.main]]
  # name = "Projects"
