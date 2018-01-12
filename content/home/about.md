@@ -21,8 +21,10 @@ weight = 5
   course = "BSc in IT- and Software-systems"
   institution = "Dortmund University of Applied Sciences and Arts, 1.8"
   year = 2017
+[[education.courses]]
+  course = "MCSD: App Builder"
+  year = 2017
 +++
 
 # Biography
-Here comes the introductory
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Florian Traber is a passionate developer, leveraging new, upcoming and proven technologies and practices to deliver high quality solutions. His technical expertise includes cross-platform proficiency, various programming languages, and advanced knowledge of developer tools, methodologies and best practices
