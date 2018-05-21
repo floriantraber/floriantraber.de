@@ -22,6 +22,12 @@ weight = 5
   institution = "Dortmund University of Applied Sciences and Arts, 1.8"
   year = 2017
 [[education.courses]]
+  course = "Professional Scrum Master I"
+  year = 2018
+[[education.courses]]
+  course = "Professional Scrum Developer I"
+  year = 2018
+[[education.courses]]
   course = "MCSD: App Builder"
   year = 2017
 +++
