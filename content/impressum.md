@@ -14,7 +14,7 @@ Kontakt:
 
 E-Mail:
 
-florian@floriantraber.de
+florian.traber@outlook.com
 
 Quelle: http://www.e-recht24.de
 

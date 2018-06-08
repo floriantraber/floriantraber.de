@@ -33,4 +33,4 @@ weight = 5
 +++
 
 # Biography
-Florian Traber is a passionate developer, leveraging new, upcoming and proven technologies and practices to deliver high quality solutions. His technical expertise includes cross-platform proficiency, various programming languages, and advanced knowledge of developer tools, methodologies and best practices.
+I'm a passionate developer, leveraging new, upcoming and proven technologies and practices to deliver high quality solutions. My technical expertise includes cross-platform proficiency, various programming languages, and advanced knowledge of developer tools, methodologies and best practices.

@@ -48,7 +48,7 @@ defaultContentLanguageInSubdir = false
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "florian@floriantraber.de"
+  email = "florian.traber@outlook.com"
   address = "Stuttgart, Germany"
   office_hours = ""
   phone = ""
@@ -205,7 +205,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:florian@floriantraber.de"
+    link = "mailto:florian.traber@outlook.com"
 
   [[params.social]]
     icon = "github"
