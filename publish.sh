@@ -26,6 +26,8 @@ rm -rf public/*
 echo "Generating site"
 hugo
 
+npm run gulp
+
 echo "Updating master branch"
 cd public && git add --all && git commit -m "Publish to site (publish.sh)" && git push
 

@@ -20,6 +20,8 @@ hugo.exe
 .idea/**/tasks.xml
 .idea/dictionaries
 
+node_modules
+
 # Sensitive or high-churn files:
 .idea/**/dataSources/
 .idea/**/dataSources.ids
