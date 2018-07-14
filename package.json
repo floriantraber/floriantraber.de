@@ -1,6 +1,7 @@
 {
   "name": "floriantraber.de",
   "scripts": {
+    "gulp-watch": "gulp watch",
     "gulp": "gulp"
   },
   "devDependencies": {
