@@ -33,4 +33,4 @@ weight = 5
 +++
 
 # Biography
-I'm a passionate developer, leveraging new, upcoming and proven technologies and practices to deliver high quality solutions. My technical expertise includes cross-platform proficiency, various programming languages, and advanced knowledge of developer tools, methodologies and best practices.
+I’m a passionate software developer, leveraging new and proven technologies and practices to deliver high quality solutions. My technical expertise includes cross-platform proficiency, various programming languages, and advanced knowledge of software development methodologies, developer tools and industry best practices. My hands-on experience with a wide range of technologies, enables me to advise and implement the best solution for our client’s problems.
