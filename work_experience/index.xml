@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work experience on Florian Traber</title>
+    <link>/work_experience/</link>
+    <description>Recent content in Work experience on Florian Traber</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Florian Traber</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/work_experience/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Consulting Developer</title>
+      <link>/work_experience/avanade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/work_experience/avanade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software Developer C#/NAV</title>
+      <link>/work_experience/mattern/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/work_experience/mattern/</guid>
+      <description> Designed and developed desktop-based C#-applications, with connection to Dynamics NAV and Dynamics CRM, for various external and internal clients. and upgraded existing ones. Developed, enhanced and implemented Dynamics NAV ERP systems  </description>
+    </item>
+    
+  </channel>
+</rss>
