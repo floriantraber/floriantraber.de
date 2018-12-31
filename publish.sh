@@ -23,6 +23,8 @@ hugo
 
 npm run gulp
 
+echo "floriantraber.de" >> public/CNAME
+
 echo "Updating $BRANCH branch"
 cd public && git add --all && git commit -m "Publish to site (publish.sh)" && git push
 
