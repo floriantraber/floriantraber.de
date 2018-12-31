@@ -1,10 +1,5 @@
 #!/bin/sh
-BRANCH=$1
-if [[ ! $BRANCH ]]
-then
-    echo "Parameter branch ist required."
-    exit 1;
-fi
+BRANCH=gh-pages
 if [[ $(git status -s) ]]
 then
     echo "The working directory is dirty. Please commit any pending changes."
@@ -28,7 +23,7 @@ hugo
 
 npm run gulp
 
-echo "Updating master branch"
+echo "Updating $BRANCH branch"
 cd public && git add --all && git commit -m "Publish to site (publish.sh)" && git push
 
-# TODO adding a tag for a release would be nice
+
