@@ -1,48 +1,39 @@
-var gulp = require('gulp');
-
-// Include Plugins
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
+const gulp = require('gulp');
+const cleanCSS = require('gulp-clean-css');
+const htmlmin = require('gulp-htmlmin');
+const gulpImage = require('gulp-image');
+const babel = require('gulp-babel');
 const minify = require('gulp-minify');
-var gutil = require('gulp-util');
-var babel = require('gulp-babel');
-let cleanCSS = require('gulp-clean-css');
-var htmlmin = require('gulp-htmlmin');
 
-// Concatenate & Minify JS
-gulp.task('scripts', function () {
+const js = () => {
     return gulp.src('public/js/*.js')
-      //  .pipe(concat('main.js'))
-        .pipe(babel({
-            presets: ['es2015']
+        .pipe(babel())
+        .pipe(minify({
+            ext: {
+                src: '',
+                min: '.js'
+            },
+            noSource: true
         }))
-        .pipe(minify())
-        .pipe(uglify())
-        .pipe(rename('main.min.js'))
-        .pipe(gulp.dest('public/js/min/'));
-});
-
-
-
-gulp.task('minify-css', () => {
-    return gulp.src('public/styles.css')
+        .pipe(gulp.dest('public/js/'));
+};
+const css = () => {
+    return gulp.src('public/css/*.css')
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(rename('styles.min.css'))
-        .pipe(gulp.dest('public/'));
-});
-
-gulp.task('minify-html', function() {
+        .pipe(gulp.dest('public/css'));
+};
+const html = () => {
     return gulp.src('public/*.html')
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('public'));
-});
+};
+const image = () => {
+    return gulp.src('public/img/*')
+        .pipe(gulpImage())
+        .pipe(gulp.dest('public/img'));
+};
 
-gulp.task('compile', ['scripts', 'minify-css', "minify-html"], function () {
-    gulp.run("public/js/*.js", ['scripts']);
-    gulp.run("public/style.css", ['minify-css']);
-    gulp.run("public/*.html", ['minify-html']);
-});
+const compile = gulp.parallel(js, css, html, image);
+compile.description = 'compile all sources';
 
-// Default Task
-gulp.task('default', ['compile']);
+module.exports.default = compile;
