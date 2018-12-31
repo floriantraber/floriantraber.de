@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 BRANCH=gh-pages
 if [[ $(git status -s) ]]
 then
