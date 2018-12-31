@@ -1,7 +1,12 @@
 language: node_js
 node_js:
   - "11"
+install:
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.deb
+  - sudo dpkg -i hugo*.deb
+  -
 script: ./publish.sh
+
 deploy:
   provider: pages
   skip-cleanup: true
