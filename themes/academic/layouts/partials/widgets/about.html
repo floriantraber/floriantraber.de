@@ -57,19 +57,8 @@
 
     <div class="row">
 
-      {{ with $page.Params.interests }}
-      <div class="col-sm-5">
-        <h3>{{ i18n "interests" | markdownify }}</h3>
-        <ul class="ul-interests">
-          {{ range .interests }}
-          <li>{{ . | markdownify }}</li>
-          {{ end }}
-        </ul>
-      </div>
-      {{ end }}
-
       {{ with $page.Params.education }}
-      <div class="col-sm-7">
+      <div class="col-sm">
         <h3>{{ i18n "education" | markdownify }}</h3>
         <ul class="ul-edu fa-ul">
           {{ range .courses }}
