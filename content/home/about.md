@@ -22,6 +22,9 @@ weight = 5
   institution = "Dortmund University of Applied Sciences and Arts, 1.8"
   year = 2017
 [[education.courses]]
+  course = "Certified Kubernetes Application Developer (CKAD)"
+  year = 2019
+[[education.courses]]
   course = "Professional Scrum Master I"
   year = 2018
 [[education.courses]]
