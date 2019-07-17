@@ -2,6 +2,7 @@
 
 Title = "Consulting Developer"
 company = "Avanade Deutschland GmbH (Joint Venture of Accenture & Microsoft)"
+index = 2
 
 url_company = "https://www.avanade.com/"
 short_description = "Software consultant designing and implementing software solutions. Consistently developed and delivered high-quality, low-defect features on schedule."

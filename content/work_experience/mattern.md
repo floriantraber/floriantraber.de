@@ -2,6 +2,7 @@
 
 Title = "Software Developer C#/NAV"
 company = "Mattern Consult"
+index = 3
 
 url_company = "http://www.mattern.de/"
 short_description = "Software developer for Dynamics NAV ERP based projects. Designed and developed custom solutions for various SMEs."

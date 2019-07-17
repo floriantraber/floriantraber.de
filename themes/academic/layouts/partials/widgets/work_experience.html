@@ -16,9 +16,9 @@
   </div>
   <div class="col-xs-12 col-md-8">
     {{ with $page.Content }}<p>{{ . | markdownify }}</p>{{ end }}
-    {{ $.Scratch.Set "recent_work_experience" (where $.Site.RegularPages "Type" "work_experience") }}
-    {{ $recent_work_experience := $.Scratch.Get "recent_work_experience" }}
-    {{ range first $page.Params.count $recent_work_experience }}
+    {{ $.Scratch.Set "work_experience" (where $.Site.RegularPages "Type" "work_experience") }}
+    {{ $work_experience := $.Scratch.Get "work_experience" }}
+    {{ range sort $work_experience ".Params.index" }}
     <div style="margin-bottom: 1rem">
       <p style="line-height: 1.25;margin-bottom: 0.25rem;">
         <b>{{ .Title }}</b><br/>

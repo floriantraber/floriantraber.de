@@ -2,6 +2,7 @@
 
 Title = "Software Engineer"
 company = "Yelp"
+index = 1
 
 url_company = "https://www.yelp.com/"
 short_description = "Software Engineer at Yelp"
