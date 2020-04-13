@@ -7,14 +7,14 @@ draft: false
 Angaben gemäß § 5 TMG:
 
 Florian Traber
-70174 Stuttgart
-Azenbergstr. 23
+22767 Hamburg
+Brunnehofstr. 5
 
 Kontakt:
 
 E-Mail:
 
-florian.traber@outlook.com
+florian@floriantraber.de
 
 Quelle: http://www.e-recht24.de
 
