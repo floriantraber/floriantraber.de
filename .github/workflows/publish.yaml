@@ -11,8 +11,8 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
-      pages: write      
-      id-token: write   
+      pages: write
+      id-token: write
     environment:
       name: github-pages
     steps:
@@ -22,7 +22,7 @@ jobs:
           node-version: lts/*
       - run: npm ci
       - run: npm run gulp
-      - name: Deploy
+      - name: Legacy Deploy
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
@@ -30,5 +30,10 @@ jobs:
           FOLDER: website
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Deploy to GitHub Pages
+        permissions:
+          pages: write
+          id-token: write
+        environment:
+          name: github-pages
         id: deployment
         uses: actions/deploy-pages@v2
