@@ -5,18 +5,7 @@ const gulpImage = require('gulp-image');
 const babel = require('gulp-babel');
 const minify = require('gulp-minify');
 
-const js = () => {
-    return gulp.src('public/js/*.js')
-        .pipe(babel())
-        .pipe(minify({
-            ext: {
-                src: '',
-                min: '.js'
-            },
-            noSource: true
-        }))
-        .pipe(gulp.dest('public/js/'));
-};
+
 const css = () => {
     return gulp.src('public/css/*.css')
         .pipe(cleanCSS({compatibility: 'ie8'}))
@@ -33,7 +22,7 @@ const image = () => {
         .pipe(gulp.dest('public/img'));
 };
 
-const compile = gulp.parallel(js, css, html, image);
+const compile = gulp.parallel(css, html, image);
 compile.description = 'compile all sources';
 
 module.exports.default = compile;

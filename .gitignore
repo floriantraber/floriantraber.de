@@ -19,7 +19,7 @@ hugo.exe
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/dictionaries
-
+.DS_Store
 node_modules
 
 # Sensitive or high-churn files:
