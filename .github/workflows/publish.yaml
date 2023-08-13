@@ -19,9 +19,6 @@ jobs:
       - run: npm ci
       - name: Run a multi-line script
         run: |
-          rm -rf public
-          mkdir public
-          cp -r website public 
           npm run gulp
           echo "floriantraber.de" >> public/CNAME 
       - name: Deploy
@@ -29,5 +26,5 @@ jobs:
         env:
           REPO: self
           BRANCH: gh-pages
-          FOLDER: public
+          FOLDER: website
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
