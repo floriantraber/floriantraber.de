@@ -18,7 +18,6 @@ jobs:
           node-version: lts/*
       - run: npm ci
       - run: npm run gulp
-      - run: echo "floriantraber.de" >> website/CNAME
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop
         env:
