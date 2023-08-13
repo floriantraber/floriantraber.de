@@ -25,3 +25,6 @@ jobs:
           BRANCH: gh-pages
           FOLDER: website
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
