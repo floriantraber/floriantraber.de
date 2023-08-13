@@ -1,2 +1,2 @@
 # floriantraber.de
-[![Build Status](https://travis-ci.com/floriantraber/floriantraber.de.svg?branch=master)](https://travis-ci.com/floriantraber/floriantraber.de)
+[![publish](https://github.com/floriantraber/floriantraber.de/actions/workflows/publish.yaml/badge.svg)](https://github.com/floriantraber/floriantraber.de/actions/workflows/publish.yaml)
