@@ -2,8 +2,6 @@ const gulp = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const htmlmin = require('gulp-htmlmin');
 const gulpImage = require('gulp-image');
-const babel = require('gulp-babel');
-const minify = require('gulp-minify');
 
 
 const css = () => {
