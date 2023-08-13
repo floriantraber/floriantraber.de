@@ -10,7 +10,11 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-
+    permissions:
+      pages: write      
+      id-token: write   
+    environment:
+      name: github-pages
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
