@@ -5,8 +5,9 @@ echo "Deleting old publication"
 rm -rf public
 mkdir public
 
+cp -r website public
+
 echo "Generating site"
-hugo
 
 npm run gulp
 
