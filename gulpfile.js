@@ -7,22 +7,23 @@ const minify = require('gulp-minify');
 
 
 const css = () => {
-    return gulp.src('public/css/*.css')
+    return gulp.src('website/css/*.css')
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest('public/css'));
+        .pipe(gulp.dest('website/css'));
 };
 const html = () => {
-    return gulp.src('public/*.html')
+    return gulp.src('website/*.html')
         .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest('public'));
+        .pipe(gulp.dest('website'));
 };
 const image = () => {
-    return gulp.src('public/img/*')
+    return gulp.src('website/img/*')
         .pipe(gulpImage())
-        .pipe(gulp.dest('public/img'));
+        .pipe(gulp.dest('website/img'));
 };
 
 const compile = gulp.parallel(css, html, image);
 compile.description = 'compile all sources';
 
 module.exports.default = compile;
+ 
