@@ -17,10 +17,8 @@ jobs:
         with:
           node-version: lts/*
       - run: npm ci
-      - name: Run a multi-line script
-        run: |
-          npm run gulp
-          echo "floriantraber.de" >> public/CNAME 
+      - run: npm gulp
+      - run: echo "floriantraber.de" >> website/CNAME
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop
         env:

@@ -7,9 +7,9 @@ const minify = require('gulp-minify');
 
 
 const css = () => {
-    return gulp.src('website/css/*.css')
+    return gulp.src('website/*.css')
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest('website/css'));
+        .pipe(gulp.dest('website'));
 };
 const html = () => {
     return gulp.src('website/*.html')
@@ -26,4 +26,4 @@ const compile = gulp.parallel(css, html, image);
 compile.description = 'compile all sources';
 
 module.exports.default = compile;
- 
+
