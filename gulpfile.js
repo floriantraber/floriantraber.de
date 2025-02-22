@@ -1,7 +1,6 @@
 const gulp = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const htmlmin = require('gulp-htmlmin');
-const gulpImage = require('gulp-image').default;
 
 const css = () => {
     return gulp.src('website/*.css')
@@ -12,11 +11,6 @@ const html = () => {
     return gulp.src('website/*.html')
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('website'));
-};
-const image = () => {
-    return gulp.src('website/img/*')
-        .pipe(gulpImage())
-        .pipe(gulp.dest('website/img'));
 };
 
 const compile = gulp.parallel(css, html, image);
