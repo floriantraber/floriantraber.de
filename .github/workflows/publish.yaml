@@ -15,6 +15,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
+      - run: sudo apt install -y libimagequant-dev
       - run: npm ci
       - run: npm run gulp
       - uses: actions/upload-pages-artifact@v3
