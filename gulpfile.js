@@ -13,7 +13,7 @@ const html = () => {
         .pipe(gulp.dest('website'));
 };
 
-const compile = gulp.parallel(css, html, image);
+const compile = gulp.parallel(css, html);
 compile.description = 'compile all sources';
 
 module.exports.default = compile;
